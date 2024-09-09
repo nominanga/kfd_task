@@ -100,7 +100,6 @@ class ConsoleOperator:
 
     def run(self):
         while True:
-            os.system("cls")
             print("""Type any of these commands\nexchange\nbalance\nexit""")
             command = input("Enter the command: ")
             command.lower()
