@@ -1,4 +1,5 @@
 from random import choice
+import os
 
 
 class Terminal:
@@ -99,17 +100,21 @@ class ConsoleOperator:
 
     def run(self):
         while True:
+            os.system("cls")
             print("""Type any of these commands\nexchange\nbalance\nexit""")
             command = input("Enter the command: ")
             command.lower()
             print()
             if command == "exchange":
+                os.system("cls")
                 self.perform_exchange()
             elif command == "balance":
+                os.system("cls")
                 self.balance()
             elif command == "exit":
                 exit()
             else:
+                os.system("cls")
                 print("Unknown command")
 
 
